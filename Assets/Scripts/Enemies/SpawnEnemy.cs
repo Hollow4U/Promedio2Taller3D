@@ -1,8 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
-public class SpawnEnemy : MonoBehaviour
+[Serializable]
+public class SpawnEnemy 
 {
     [SerializeField] private List<GameObject> enemies;
     public List<GameObject> EnemyPrefabs

@@ -19,8 +19,8 @@ public class EnemyMovement : MonoBehaviour
 
     private void Move()
     {
-        Vector3 movement = transform.forward * speed;
-        movement.z = rb.velocity.z;
+        Vector3 movement = -transform.forward * speed;
+        movement.x = rb.velocity.x;
         rb.velocity = movement;
     }
 }

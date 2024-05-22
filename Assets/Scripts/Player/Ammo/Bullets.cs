@@ -5,8 +5,8 @@ using UnityEngine;
 public class Bullets : MonoBehaviour
 {
     [SerializeField] protected int damage = 10;
-    [SerializeField] protected EnemyWhite enemyW;
-    [SerializeField] protected EnemyBlack enemyB;
+  //  [SerializeField] protected EnemyWhite enemyW;
+    //[SerializeField] protected EnemyBlack enemyB;
     [SerializeField] private float speed;
     [SerializeField] private Rigidbody rb;
     [SerializeField] private Vector3 direction;

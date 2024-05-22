@@ -6,5 +6,5 @@ public class EnemyWhite : Enemy
 {
     private EnemyWhite(int life) : base(life)
     {
-    }
+    } 
 }

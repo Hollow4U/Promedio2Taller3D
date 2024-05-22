@@ -13,7 +13,6 @@ public class WhiteBullet : Bullets
         if (other.CompareTag("EnemyWhite"))
         {
             other.GetComponent<EnemyWhite>().life -= damage;
-            enemyW.life -= damage;
             Destroy(gameObject);
         }
         else if (other.CompareTag("EnemyBlack"))
