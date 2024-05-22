@@ -7,14 +7,28 @@ public class Bullets : MonoBehaviour
     [SerializeField] protected int damage = 10;
     [SerializeField] protected GameObject enemyW;
     [SerializeField] protected GameObject enemyB;
+    [SerializeField] private float speed;
+    [SerializeField] private Rigidbody rb;
+    [SerializeField] private Vector3 direction;
     public Bullets(int dmg)
     {
         this.damage = dmg;
     }
 
+    public void SetDirection(Vector3 direction)
+    {
+        this.direction = direction;
+    }
+
     public void Start()
     {
-        enemyW = GetComponent<EnemyWhite>();
-        enemyB = GetComponent<EnemyBlack>();
+        rb = GetComponent<Rigidbody>();
+       // enemyW = GetComponent<EnemyWhite>();
+       // enemyB = GetComponent<EnemyBlack>();
+    }
+
+    public void Update()
+    {
+        rb.velocity = direction * speed;
     }
 }

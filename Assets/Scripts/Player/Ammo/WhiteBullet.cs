@@ -12,7 +12,7 @@ public class WhiteBullet : Bullets
     {
         if (other.CompareTag("EnemyBlack"))
         {
-            enemyW.life -= damage;
+       //     enemyW.life -= damage;
             Destroy(gameObject);
         }
         else if (other.CompareTag("EnemyWhite"))

@@ -12,7 +12,8 @@ public class BlackBullet : Bullets
     {
         if(other.CompareTag("EnemyBlack"))
         {
-            enemyB.life -= damage;
+            //    enemyB.life -= damage;
+            Destroy(gameObject);
         }
         else if(other.CompareTag("EnemyWhite"))
         {
