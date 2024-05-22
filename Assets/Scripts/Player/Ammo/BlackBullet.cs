@@ -12,7 +12,7 @@ public class BlackBullet : Bullets
     {
         if(other.CompareTag("EnemyBlack"))
         {
-            //    enemyB.life -= damage;
+            other.GetComponent<EnemyBlack>().life -= damage;
             Destroy(gameObject);
         }
         else if(other.CompareTag("EnemyWhite"))

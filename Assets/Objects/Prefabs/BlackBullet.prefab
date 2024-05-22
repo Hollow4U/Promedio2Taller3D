@@ -112,8 +112,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 10
-  enemyW: {fileID: 0}
-  enemyB: {fileID: 0}
+  enemyW: {fileID: 6206775923908680401, guid: e704f8668178d6c44a7706719910711b, type: 3}
+  enemyB: {fileID: 4497635546743585331, guid: d08799e615ebdd6439f6e62b49d68f73, type: 3}
   speed: 900
   rb: {fileID: 0}
   direction: {x: 0, y: 0, z: 0}

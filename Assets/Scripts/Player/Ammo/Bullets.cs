@@ -5,8 +5,8 @@ using UnityEngine;
 public class Bullets : MonoBehaviour
 {
     [SerializeField] protected int damage = 10;
-    [SerializeField] protected GameObject enemyW;
-    [SerializeField] protected GameObject enemyB;
+    [SerializeField] protected EnemyWhite enemyW;
+    [SerializeField] protected EnemyBlack enemyB;
     [SerializeField] private float speed;
     [SerializeField] private Rigidbody rb;
     [SerializeField] private Vector3 direction;
@@ -23,8 +23,6 @@ public class Bullets : MonoBehaviour
     public void Start()
     {
         rb = GetComponent<Rigidbody>();
-       // enemyW = GetComponent<EnemyWhite>();
-       // enemyB = GetComponent<EnemyBlack>();
     }
 
     public void Update()

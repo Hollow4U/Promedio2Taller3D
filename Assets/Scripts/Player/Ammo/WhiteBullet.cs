@@ -10,12 +10,13 @@ public class WhiteBullet : Bullets
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("EnemyBlack"))
+        if (other.CompareTag("EnemyWhite"))
         {
-       //     enemyW.life -= damage;
+            other.GetComponent<EnemyWhite>().life -= damage;
+            enemyW.life -= damage;
             Destroy(gameObject);
         }
-        else if (other.CompareTag("EnemyWhite"))
+        else if (other.CompareTag("EnemyBlack"))
         {
             Destroy(gameObject);
         }
